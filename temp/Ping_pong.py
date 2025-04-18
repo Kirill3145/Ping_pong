@@ -93,7 +93,7 @@ while game:
 
         
         font.init()
-        font2 = font.SysFont(None, 36)
+        font2 = font.SysFont(None, 100)
 
         window.fill(back)
 
@@ -109,12 +109,12 @@ while game:
     if ball.rect.x < 0:
         finish = True
         win1 = font2.render('Player2 WIN!!!', 100, (255,255,255))
-        window.blit(win1,(600, 350))
+        window.blit(win1,(420, 300))
 
     if ball.rect.x > 1250:
         finish = True
         win2 = font2.render('Player1 WIN!!!', 100, (255,255,255))
-        window.blit(win2,(500, 320))
+        window.blit(win2,(420, 300))
 
 
         
